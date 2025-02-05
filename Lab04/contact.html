@@ -44,6 +44,31 @@
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/manqbnol" method="post">
+            <!-- Text Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <!-- Radio Button -->
+            <label for="contact-method">Preferred Contact Method:</label><br>
+            <input type="radio" id="email" name="contact-method" value="email">
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="contact-method" value="phone">
+            <label for="phone">Phone</label><br><br>
+        
+            <!-- Checkbox -->
+            <label for="updates">Subscribe to Updates:</label>
+            <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
+        
+            <!-- Textarea -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+        
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
     </body>
 
 </html>
