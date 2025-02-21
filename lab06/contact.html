@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- ✅ Link to external CSS -->
+</head>
+
+<body>
+    <h1>Contact</h1>
+    
+    <p>Stephen Crossley</p>
+    <p>900 South Crouse Ave.</p>
+    <p>Syracuse, NY 13210</p>
+
+    <!--LinkedIn Link-->
+    <p>
+        <a href="https://www.linkedin.com/in/stephen-crossley">
+            My LinkedIn Profile
+        </a>
+    </p> 
+    
+    <!--Email Link-->
+    <p>
+        <a href="mailto:sjcrossl@syr.edu">Email Me</a>
+    </p>
+
+    <!-- Profile Image -->
+    <p>
+        <img src="../Images/military-bio-photo.png" alt="Profile Image">
+    </p>
+
+    <!-- Embedded Google Map -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.662870079397!2d-72.45584362377554!3d43.46763506441288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e1c4c1d54cdc93%3A0x1d69401b1234c55!2s20%20VT-44%2C%20Windsor%2C%20VT%2005089!5e0!3m2!1sen!2sus!4v1738192285285!5m2!1sen!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/manqbnol" method="post">
+        <!-- Text Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <!-- Radio Button -->
+        <p>Preferred Contact Method:</p>
+        <input type="radio" id="email" name="contact-method" value="email">
+        <label for="email">Email</label>
+        <input type="radio" id="phone" name="contact-method" value="phone">
+        <label for="phone">Phone</label><br><br>
+    
+        <!-- Checkbox -->
+        <label for="updates">Subscribe to Updates:</label>
+        <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
+    
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
