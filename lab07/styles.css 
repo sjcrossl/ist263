@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    background-color: #F5F5F5; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222222; /* Dark gray background */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px; /* Adds space below nav */
+}
+
+nav a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px; /* Space between nav links */
+}
+
+/* Hover Effect for Navigation Links */
+nav a:hover {
+    background-color: #FFD700; /* Gold background when hovering */
+}
+
+/* Skills Table Styling */
+.skills-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid black; /* Adds black borders to table */
+    padding: 10px; /* Adds space inside the cells */
+    text-align: center; /* Centers content */
+}
+
+.skills-table th {
+    background-color: #ddd; /* Light gray background for headers */
+}
+
+/* Zebra Striping (Alternating Row Colors) */
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for every even row */
+}
+
+/* Adjusting Column Spacing */
+.skills-table td:first-child {
+    padding-left: 15px;
+}
+
+.skills-table td:last-child {
+    padding-right: 15px;
+}
+
+/* Box Model Adjustments */
+nav {
+    padding: 10px;
+    margin-bottom: 30px; /* Adds space below navigation */
+}
