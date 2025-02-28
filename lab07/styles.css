@@ -1,21 +1,33 @@
 
 .skills-table {
-    width: 100%;
-    border-collapse: collapse; 
-    margin-top: 20px; 
+    width: 100%;  
+    border-collapse: collapse;  
+    margin-top: 20px;  
 }
+
 
 .skills-table th, .skills-table td {
-    border: 2px solid black; 
-    padding: 10px;
-    text-align: center; 
+    border: 2px solid black;  /* Clearly defines cell borders */
+    padding: 12px; 
+    text-align: center;  
 }
 
+/* Table Header (Column Titles) */
 .skills-table th {
-    background-color: #ddd;
+    background-color: #ddd;  /* Light gray background */
+    font-weight: bold;  /* Makes headers bold */
 }
 
-
+/* Alternating Row Colors for Readability */
 .skills-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2;  /* Light gray for every even row */
+}
+
+/* Adjust Column Spacing */
+.skills-table td:first-child {
+    padding-left: 15px;  /* Adds space to the first column */
+}
+
+.skills-table td:last-child {
+    padding-right: 15px;  /* Adds space to the last column */
 }
