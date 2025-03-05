@@ -1,0 +1,29 @@
+/* Float bio image left */
+.bio-img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px; /* Optional: rounds corners */
+    width: 200px; /* Adjust as needed */
+}
+
+/* Clearfix to prevent layout breaking */
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Tagline floats to the right */
+.tagline {
+    float: right;
+}
