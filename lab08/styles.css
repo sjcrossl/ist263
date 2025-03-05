@@ -27,3 +27,19 @@ footer {
 .tagline {
     float: right;
 }
+
+/* Table Styling */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #ddd;
+}
