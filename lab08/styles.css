@@ -3,7 +3,7 @@
     float: left;
     margin-right: 15px;
     border-radius: 10px; /* Optional: rounds corners */
-    width: 200px; /* Adjust as needed */
+    
 }
 
 /* Clearfix to prevent layout breaking */
