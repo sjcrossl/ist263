@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0; /* Remove extra padding that can cause layout shifts */
     background-color: #f8f8f8;
-    width: 100%; /* Ensures the body stretches properly */
+     /* Ensures the body stretches properly */
 }
 
 
