@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0; /* Remove extra padding that can cause layout shifts */
     background-color: #f8f8f8;
-     /* Ensures the body stretches properly */
+    width: 100%; /* Ensures the body stretches properly */
 }
 
 
@@ -13,7 +13,7 @@ nav {
     background-color: #5a85c7;
     padding: 10px;
     width: 100%;  /* Ensures the navigation spans the full width */
-    text-align: center;
+    text-align: left;
 }
 
 
