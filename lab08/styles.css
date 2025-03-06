@@ -59,6 +59,7 @@ nav a {
     align-items: center;
     width: 100%; /* Make sure it fills the space */
     min-width: 450px; /* Prevents shrinking */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
