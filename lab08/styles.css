@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0; /* Remove extra padding that can cause layout shifts */
     background-color: #f8f8f8;
-    width: 100%; /* Ensures the body stretches properly */
+    width: fit-content; /* Ensures the body stretches properly */
 }
 
 
@@ -22,7 +22,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin:0 20px;
+    margin:0 10px;
 }
 
 /* FLEXBOX LAYOUT */
