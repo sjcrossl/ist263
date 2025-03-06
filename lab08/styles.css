@@ -47,11 +47,11 @@ nav a {
     border-radius: 10px;
     flex: 1; /* Ensures equal width for both sections */
     min-width: 300px; /* Prevents boxes from getting too small */
-    
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-/* Ensure the Google Maps iframe is positioned to the right */
+/*  Google Maps iframe is positioned to the right */
 .map-container {
     flex: 1;
     display: flex;
@@ -83,15 +83,7 @@ nav a {
     background-color: #4a75b2;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
-    .map-container {
-        justify-content: center;
-    }
-}
+
 /* -------------------------------------- */
 /* TABLE STYLING (Added at the END of CSS) */
 /* -------------------------------------- */
