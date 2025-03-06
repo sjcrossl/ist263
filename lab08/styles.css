@@ -1,45 +1,79 @@
-/* Float bio image left */
-.bio-img {
-    float: left;
-    margin-right: 15px;
-   
-    
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
 }
 
-/* Clearfix to prevent layout breaking */
-section::after {
-    content: "";
-    display: block;
-    clear: both;
+/* Navigation Bar */
+nav {
+    background-color: #5a85c7;
+    padding: 10px;
 }
 
-/* Footer styling */
-footer {
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Flexbox Layout */
+.row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.column {
     background-color: #f4f4f4;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
 }
 
-/* Tagline floats to the right */
-.tagline {
-    float: right;
+/* First Row Styling */
+.address-box {
+    flex: 1;
 }
 
-/* Table Styling */
-.skills-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.skills-table th, .skills-table td {
-    border: 1px solid black;
-    padding: 8px;
+.contact-links {
+    flex: 1;
     text-align: left;
 }
 
-.skills-table th {
-    background-color: #ddd;
+/* Second Row Styling */
+.contact-form {
+    flex: 1;
+}
+
+.map-box {
+    flex: 1;
+}
+
+/* Form Styling */
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #5a85c7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4a75b2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
 }
