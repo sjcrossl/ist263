@@ -2,15 +2,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* Remove extra padding that can cause layout shifts */
     background-color: #f8f8f8;
+    width: 100%; /* Ensures the body stretches properly */
 }
+
 
 /* Navigation Bar */
 nav {
     background-color: #5a85c7;
     padding: 10px;
+    width: 100%;  /* Ensures the navigation spans the full width */
+    text-align: center;
 }
+
 
 nav a {
     color: white;
@@ -26,7 +31,11 @@ nav a {
     gap: 20px;
     margin: 20px 0;
     padding: 20px;
+    width: 100%; /* Ensures the flex container takes full width */
+    max-width: 1200px; /* Prevents content from being too stretched on large screens */
+    margin: auto; /* Centers the container */
 }
+
 
 /* BOX STYLING */
 .contact-box {
