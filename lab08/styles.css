@@ -92,3 +92,22 @@ nav a {
         justify-content: center;
     }
 }
+
+/* -------------------------------------- */
+/* TABLE STYLING (Added at the END of CSS) */
+/* -------------------------------------- */
+
+table {
+    border-collapse: collapse; /* Removes double borders */
+    width: 100%; /* Makes table span full width */
+}
+
+th, td {
+    border: 2px solid black; /* Defines black borders around each cell */
+    padding: 10px; /* Adds space inside cells */
+    text-align: left; /* Aligns text to the left */
+}
+
+th {
+    background-color: #f4f4f4; /* Light background for headers */
+}
