@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0; 
-    background-color: #dad8d8;
+    background-color: #3e7d1c;
     width: 100%; 
 }
 
@@ -74,6 +74,14 @@ th, td {
     border: 2px solid black; 
     padding: 10px; 
     text-align: left; 
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Off-white */
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* White */
 }
 
 th {
