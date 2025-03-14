@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteran Memes HQ - Upload Your Meme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* ===== Header & Navigation ===== */
+        header {
+            background-color: #00274D;
+            color: white;
+            padding: 15px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 15px;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover, .active {
+            background-color: #FFD700;
+            color: #00274D;
+            border-radius: 5px;
+        }
+
+        /* ===== Meme Upload Section ===== */
+        .upload-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-box {
+            border: 2px dashed #00274D;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+
+        .upload-box:hover {
+            background-color: #eef1f7;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .text-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* ===== Submit Button ===== */
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: not-allowed;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .submit-btn.enabled {
+            background-color: #3e8e41;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover.enabled {
+            background-color: #2e7031;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #00274D;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fileInput = document.getElementById("file-input");
+            const dropArea = document.getElementById("upload-box");
+            const submitBtn = document.getElementById("submit-btn");
+
+            function updateButtonState() {
+                if (fileInput.files.length > 0) {
+                    submitBtn.classList.add("enabled");
+                    submitBtn.removeAttribute("disabled");
+                } else {
+                    submitBtn.classList.remove("enabled");
+                    submitBtn.setAttribute("disabled", "true");
+                }
+            }
+
+            dropArea.addEventListener("click", () => fileInput.click());
+
+            fileInput.addEventListener("change", updateButtonState);
+
+            dropArea.addEventListener("dragover", (event) => {
+                event.preventDefault();
+                dropArea.style.background = "#eef1f7";
+            });
+
+            dropArea.addEventListener("dragleave", () => {
+                dropArea.style.background = "#f9f9f9";
+            });
+
+            dropArea.addEventListener("drop", (event) => {
+                event.preventDefault();
+                fileInput.files = event.dataTransfer.files;
+                updateButtonState();
+            });
+
+            submitBtn.addEventListener("click", function () {
+                if (!submitBtn.classList.contains("enabled")) return;
+                alert("Meme Uploaded Successfully! (Feature to be implemented)");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Veteran Memes HQ</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chat.html">Veteran Chat</a>
+            <a href="memes.html" class="active">Meme Page</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Meme</h2>
+            
+            <!-- Drag & Drop Upload Box -->
+            <div id="upload-box" class="upload-box">
+                <p>📂 Drop your meme here or click to upload</p>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+
+            <!-- Meme Details -->
+            <div class="text-fields">
+                <input type="text" id="meme-title" placeholder="Meme Title" required>
+                <textarea id="meme-caption" placeholder="Caption (Optional)"></textarea>
+                <input type="text" id="meme-tags" placeholder="Tags (e.g., #Army, #VeteranHumor)">
+            </div>
+
+            <!-- Submit Button -->
+            <button id="submit-btn" class="submit-btn" disabled>Send It! 🚀</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Veterans United - Support Our Heroes</p>
+        <p>Disclaimer: Memes are for entertainment purposes only.</p>
+    </footer>
+</body>
+</html>
