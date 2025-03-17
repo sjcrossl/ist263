@@ -26,16 +26,25 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: white; /* Keep all links white when not hovered */
     text-decoration: none;
     font-size: 18px;
     margin: 15px;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    padding: 8px 15px;
+    transition: background 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #FFD700; /* Gold on Hover */
+    background-color: #FFD700; /* Gold background on hover */
+    color: #00274D; /* Dark navy text on hover */
+    border-radius: 5px;
+}
+
+/* Make sure active page does NOT have gold background */
+nav a.active {
+    background-color: transparent; /* No background color */
+    color: white; /* Keep text white like other links */
 }
 
 /* ===== Hero Section ===== */
@@ -101,4 +110,104 @@ blockquote {
     width: 80%;
     font-size: 1.1em;
     line-height: 1.5;
+}
+
+/* ===== Meme Upload Section ===== */
+.upload-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-box {
+    border: 2px dashed #00274D;
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.upload-box:hover {
+    background-color: #eef1f7;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.text-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.submit-btn.enabled {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+.submit-btn:hover.enabled {
+    background-color: #2e7031;
+}
+
+/* ===== Meme Gallery Section ===== */
+.meme-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.meme {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.meme-caption {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #00274D;
+    color: white;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 14px;
 }
