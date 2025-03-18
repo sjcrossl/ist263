@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Example</title>
+    <title>HTML Form & Table Example</title>
     <style>
-        /* Element Selector */
-        p {
-            color: blue;
-            font-size: 18px;
-        }
-
-        /* Class Selector */
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-
-        /* ID Selector */
-        #main-heading {
-            color: red;
-            text-transform: uppercase;
-        }
-
-        /* Grouped Selector */
-        h1, h2, h3 {
+        body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 20px;
         }
-
-        /* Descendant Selector */
-        div p {
-            font-style: italic;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
-
-        /* Child Selector */
-        div > p {
-            border-bottom: 2px solid green;
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
         }
-
-        /* Adjacent Sibling Selector */
-        h1 + p {
-            color: purple;
-        }
-
-        /* General Sibling Selector */
-        h2 ~ p {
-            font-size: 20px;
-        }
-
-        /* Pseudo-Class Selector */
-        a:hover {
-            color: orange;
-        }
-
-        /* Pseudo-Element Selector */
-        p::first-letter {
-            font-size: 2em;
-            color: darkgreen;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
 
-    <h1 id="main-heading">Welcome to CSS Selectors</h1>
+    <!-- Example of an Embedded Iframe -->
+    <h2>Embedded YouTube Video</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
-    <h2>Subtitle Example</h2>
+    <!-- Example of a Table -->
+    <h2>Product Table</h2>
+    <table>
+        <caption>Product Price List</caption>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$999</td>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>$699</td>
+        </tr>
+    </table>
 
-    <p>This paragraph is selected by the **element selector**.</p>
+    <!-- Example of a Form -->
+    <h2>Contact Form</h2>
+    <form action="submit.php" method="POST">
+        <!-- Label & Input for Text -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-    <p class="highlight">This paragraph is targeted using the **class selector**.</p>
+        <!-- Label & Textarea for Multi-line Input -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30" placeholder="Your message..."></textarea><br><br>
 
-    <div>
-        <p>This paragraph is inside a `div` and styled using the **descendant selector**.</p>
-        <p>This paragraph is a direct child of `div` and has a **border-bottom (child selector)**.</p>
-    </div>
+        <!-- Radio Buttons -->
+        <p>Choose your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
 
-    <p>This paragraph follows an `h1` and is styled using the **adjacent sibling selector**.</p>
+        <!-- Checkboxes -->
+        <p>Select your interests:</p>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br><br>
 
-    <p>This paragraph is a **general sibling of `h2`** and has increased font size.</p>
+        <!-- Dropdown Menu -->
+        <label for="country">Select Your Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br><br>
 
-    <a href="#">Hover over this link to see the **pseudo-class selector** in action.</a>
-
-    <p>This paragraph demonstrates the **pseudo-element selector**, enlarging the first letter.</p>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 </html>
