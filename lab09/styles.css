@@ -48,10 +48,11 @@ nav a:hover {
 
 /* Center and Style the Intro Text */
 .skills-intro {
-    text-align: center;
+    text-align: left;
     font-size: 1.1em;
     max-width: 75%;
     margin: 0 auto 20px;
+    max-width: 90%;
 }
 
 
@@ -59,22 +60,21 @@ nav a:hover {
 /* FLEXBOX for Skills Section */
 .skills-container {
     display: flex;
-    justify-content: space-between; /* Ensures proper spacing */
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 40px; /* More spacing between main skills and other skills */
+    gap: 20px;
     margin: 20px auto;
     padding: 20px;
     width: 90%;
-    max-width: 1100px; /* Prevents overlap */
+    max-width: 1200px;
 }
-
 
 /* FLEXBOX for 5 Main Skills (Icons in a Row) */
 .main-skills {
     display: flex;
     justify-content: space-evenly; /* Distributes evenly */
     flex: 3;
-    max-width: 70%; /* Keeps it from extending into other skills */
+    max-width: 90%; /* Keeps it from extending into other skills */
     margin: 0 auto;
     flex-wrap: wrap; /* Allows wrapping to avoid overlap */
 }
@@ -85,18 +85,10 @@ nav a:hover {
 .skills-box {
     text-align: center;
     flex: 1;
-    max-width: 150px; /* Restricts width to prevent long text issues */
 }
-
-.skills-box p {
-    max-width: 100px; /* Prevents long words from extending */
-    word-wrap: break-word;
-    text-align: center;
-}
-
 
 .skills-box img {
-    width: 80px;
+    width: 80%;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -110,9 +102,8 @@ nav a:hover {
     border-radius: 10px;
     flex: 1;
     text-align: left;
-    max-width: 25%; /* Ensures it remains in its section */
+    max-width: 20%;
 }
-
 
 .other-skills h2 {
     margin-top: 0;
