@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Participation 10 - Responsive Design</title>
+  <title>Participation 10</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 100px;
+      padding-top: 100px;
     }
 
     .large-message {
       display: block;
+      font-size: 32px;
+      color: green;
     }
 
     .small-message {
       display: none;
+      font-size: 32px;
+      color: orange;
     }
 
     @media screen and (max-width: 800px) {
@@ -31,7 +35,16 @@
   </style>
 </head>
 <body>
-  <h1 class="large-message">I’m large.<br><small>(When the viewport is over 800 pixels)</small></h1>
-  <h1 class="small-message">I’m small.<br><small>(When the viewport is 800 pixels or less)</small></h1>
+
+  <div class="large-message">
+    I’m large.<br>
+    When the viewport is over 800 pixels.
+  </div>
+
+  <div class="small-message">
+    I’m small.<br>
+    When the viewport is 800 pixels or less.
+  </div>
+
 </body>
 </html>
