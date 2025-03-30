@@ -26,8 +26,7 @@ nav {
 }
 
 nav a {
-    color: white; /* Keep all links white when not hovered */
-    text-decoration: none;
+    color: white; 
     font-size: 18px;
     margin: 15px;
     font-weight: bold;
@@ -41,10 +40,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Make sure active page does NOT have gold background */
+
 nav a.active {
-    background-color: transparent; /* No background color */
-    color: white; /* Keep text white like other links */
+    background-color: transparent;
+    color: white;
 }
 
 /* ===== Hero Section ===== */
