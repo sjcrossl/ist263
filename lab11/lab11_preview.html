@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 Preview</title>
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate2.css">
+    
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        #first {order: 1;}
+        #second {order: 2;}
+        #third {order: 3;}
+
+        img {
+            width: 100px;
+        }
+        #message {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+
+<script>
+    let winnerId = "";
+
+    function ShuffleShells() {
+        const shells = ["first", "second", "third"];
+        // Randomly choose one shell to be the winner
+        winnerId = shells[Math.floor(Math.random() * shells.length)];
+
+        // Shuffle the order of all shells
+        shells.forEach(id => {
+            document.getElementById(id).style.order = Math.floor(Math.random() * 10);
+        });
+    }
+
+    function CheckWinner(clickedShell) {
+        if (clickedShell.id === winnerId) {
+            document.getElementById("message").innerHTML = "You won!";
+        } else {
+            document.getElementById("message").innerHTML = "Wrong Shell - Try Again";
+        }
+    }
+</script>
+
+</head>
+
+<body onload="ShuffleShells();">
+    <h1>Choose a Walnut</h1>
+
+    <div class="container">
+       <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="first walnut" id="first" onclick="CheckWinner(this);">
+       <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="second walnut" id="second" onclick="CheckWinner(this);">
+       <img src="https://peopel-su.github.io/ist263/images/walnut.png" alt="third walnut" id="third" onclick="CheckWinner(this);">
+    </div>
+
+    <div id="message"></div>
+</body>
+</html>
