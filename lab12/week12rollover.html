@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Quiz</title>
+    <script>
+        function change () {
+            document.getElementById("arrow") .setAttribute ("src", "https://peopel-su.github.io/ist263/images/arrow.png")
+        }
+        function changeBack () {
+            document.getElementById("arrow") .setAttribute ("src",
+            "https://peopel-su.github.io/ist263/images/arrow.png")
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1> My JavaScript Quiz</h1>
+    <p> Java and JavaScript are the same thing.</p>
+    <p onclick="wrongAnswer(); " id="wrong">True</p>
+    <p onclick="rightAnswer() " id="correct">False</p>
+
+    </body>
+
+    <body>
+        <h1>Image Rollovers</h1>
+        <img id="arrow" onmouseover="change();" onmouseout="changeBack();"
+        src="https://peopel-su.github.io/ist263/images/arrow.png"
+        alt="arrow icon">
+        </body>

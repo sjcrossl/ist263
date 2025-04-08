@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+
+        a {
+            background-color: #fff;
+            padding: 15px;
+        } 
+        #hamicon {
+            width: 40px;
+            display: none;
+        }
+        #close {
+            display: none;
+        }
+        @media only screen and (max-width:
+        800px) {
+            #hamicon, #close {display:block;}
+            a {display:block;}
+            #navlinks {display: flex;}
+            .boxit {display: flex;
+            justify-content:
+            space-between;
+        
+          }
+        }
+    </style>
+</head>
+<body id="thepage">
+    <form> 
+        <input onchange="changeColor();" id="picker" type="color">
+    </form>
+</body>
+</html>
