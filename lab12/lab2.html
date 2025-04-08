@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planets Slideshow</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .large-planet {
+      width: 300px;
+      height: auto;
+    }
+
+    .text-content {
+      max-width: 600px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .thumbnail-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .thumbnail {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumbnail:hover {
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" alt="Mercury" class="large-planet" />
+    <div class="text-content">
+      <h1>Planets Slideshow</h1>
+      <h2>Mercury</h2>
+      <p>
+        Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days,
+        the shortest of all the planets in the Solar System. It is named after the Greek god Hermes (Ερμής), translated
+        into Latin Mercurius: Mercury, god of commerce, messenger of the gods, mediator between gods and mortals.
+      </p>
+    </div>
+  </div>
+
+  <div class="thumbnail-row">
+    <img src="https://peopel-su.github.io/ist263/images/mecury.jpg" class="thumbnail" alt="Mercury" />
+    <img src="https://peopel-su.github.io/ist263/images/venus.jpg" class="thumbnail" alt="Venus" />
+    <img src="https://peopel-su.github.io/ist263/images/earth.jpg" class="thumbnail" alt="Earth" />
+    <img src="https://peopel-su.github.io/ist263/images/mars.jpg" class="thumbnail" alt="Mars" />
+    <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" class="thumbnail" alt="Jupiter" />
+    <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" class="thumbnail" alt="Saturn" />
+    <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" class="thumbnail" alt="Uranus" />
+    <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" class="thumbnail" alt="Neptune" />
+  </div>
+
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const largeImage = document.querySelector('.large-planet');
+    const planetName = document.querySelector('.text-content h2');
+    const planetDesc = document.querySelector('.text-content p');
+  
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        const alt = thumbnail.alt;
+        largeImage.src = thumbnail.src;
+        planetName.textContent = alt;
+  
+        if (alt === "Mercury") {
+          planetDesc.textContent = "Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in the Solar System. It is named after the Greek god Hermes (Ερμής), translated into Latin Mercurius: Mercury, god of commerce, messenger of the gods, mediator between gods and mortals.";
+        } else if (alt === "Venus") {
+          planetDesc.textContent = "Venus is the second planet from the Sun. It has a thick atmosphere that traps heat, making it the hottest planet in the solar system.";
+        } else if (alt === "Earth") {
+          planetDesc.textContent = "Earth is the third planet from the Sun and the only planet known to support life. It has liquid water and a breathable atmosphere.";
+        } else if (alt === "Mars") {
+          planetDesc.textContent = "Mars is the fourth planet from the Sun. It's known as the Red Planet because of its reddish appearance caused by iron oxide on its surface.";
+        } else if (alt === "Jupiter") {
+          planetDesc.textContent = "Jupiter is the largest planet in the Solar System. It has a Great Red Spot, which is a giant storm, and dozens of moons.";
+        } else if (alt === "Saturn") {
+          planetDesc.textContent = "Saturn is the sixth planet from the Sun and is known for its extensive ring system. It's a gas giant composed mainly of hydrogen and helium.";
+        } else if (alt === "Uranus") {
+          planetDesc.textContent = "Uranus is the seventh planet from the Sun. It rotates on its side and has a pale blue color due to methane in its atmosphere.";
+        } else if (alt === "Neptune") {
+          planetDesc.textContent = "Neptune is the eighth planet from the Sun. It has strong winds and storms and appears blue because of methane in its atmosphere.";
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
