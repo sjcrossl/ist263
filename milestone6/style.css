@@ -228,3 +228,25 @@ footer {
     margin-top: 30px;
     font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #00274D;
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        width: 90%;
+        margin: 8px 0;
+        padding: 12px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #004080;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+}
