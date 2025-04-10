@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    color: #faf9f9;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 /* ===== Header Styles ===== */
 header {
-    background-color: #00274D; 
+    background-color: #00274D; /* Dark Navy */
     color: white;
     padding: 15px 0;
 }
@@ -149,7 +149,7 @@ blockquote {
 }
 
 .upload-box:hover {
-    background-color: #ffffff;
+    background-color: #eef1f7;
 }
 
 input[type="file"] {
@@ -165,7 +165,7 @@ input[type="file"] {
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -176,7 +176,7 @@ input, textarea {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: 18px;
     font-weight: bold;
     width: 100%;
@@ -217,7 +217,7 @@ input, textarea {
 .meme-caption {
     font-size: 1.1em;
     margin-top: 10px;
-    color: #ffffff;
+    color: #444;
 }
 
 /* ===== Footer ===== */
@@ -228,6 +228,8 @@ footer {
     margin-top: 30px;
     font-size: 14px;
 }
+
+
 @media screen and (max-width: 768px) {
 
     nav {
