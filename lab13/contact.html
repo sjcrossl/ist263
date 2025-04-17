@@ -80,6 +80,22 @@
             </iframe>
         </div>
     </div>
+    <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+<script>
+    // Show the button
+    window.onscroll = function () {
+        document.getElementById("topBtn").style.display =
+            document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
+                ? "block"
+                : "none";
+    };
+
+    // Scroll to top
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+</script>
+
     <hr>
     <footer>
         <p>&copy; 2025 Stephen Crossley</p>

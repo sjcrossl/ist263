@@ -52,6 +52,27 @@ nav a:hover {
     background-color: #b8860b; /* Gold highlight when hovering */
 }
 
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #FFD700;
+    color: #000;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#topBtn:hover {
+    background-color: #FFA500;
+}
+
+
 .bio-img {
     max-width: 100%;
     height: auto;
@@ -244,13 +265,34 @@ iframe {
 }
 /* Fix contrast for links in LinkedIn section */
 .linkedin a {
-    color: #FFD700; /* Gold - meets contrast guidelines */
+    color: #F5F5DC; /* Gold - meets contrast guidelines */
     font-weight: bold;
     text-decoration: underline;
+    font-size: 1.2em;
 }
 
 .linkedin a:hover {
     color: #FFFFFF; /* White on hover for accessibility */
+}
+/* Ensure footer stays at the bottom but doesn't push page height */
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Footer Styling - Consistent across pages */
+footer {
+    text-align: left;
+    padding: 5px 0;
+    background-color: #4B5320;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+/* Fix unnecessary overflow from flex containers */
+.skills-container {
+    overflow: hidden;
 }
 
 
