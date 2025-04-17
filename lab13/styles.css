@@ -242,6 +242,16 @@ iframe {
     border-radius: 4px;
     display: block;
 }
+/* Fix contrast for links in LinkedIn section */
+.linkedin a {
+    color: #FFD700; /* Gold - meets contrast guidelines */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.linkedin a:hover {
+    color: #FFFFFF; /* White on hover for accessibility */
+}
 
 
 @media screen and (max-width: 768px) {
