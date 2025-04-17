@@ -33,14 +33,11 @@
             
         </div> 
         <div class="linkedin">
-            <p>
-                <a href="mailto:sjcrossl@syr.edu">Email Me</a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/stephen-crossley" target="_blank">
-                    My LinkedIn Profile
-                </a>
-            </p>
+                <h2><a href="mailto:sjcrossl@syr.edu">Email Me</a></h2>
+           
+                <h2><a href="https://www.linkedin.com/in/stephen-crossley" target="_blank">
+                    My LinkedIn Profile</a></h2>
+            
             <p>
                 <a href="https://www.linkedin.com/in/stephen-crossley" target="_blank">
                     <img src="../Images/linkedin(1).png" alt="LinkedIn profile for Stephen Crossley" width="100">
@@ -57,11 +54,16 @@
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
             
-                <h3>Preferred Contact Method:</h3>
-                <input type="radio" id="email" name="contact-method" value="email">
-                <label for="email">Email</label>
-                <input type="radio" id="phone" name="contact-method" value="phone">
-                <label for="phone">Phone</label><br><br>
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    
+                    <input type="radio" id="email" name="contact-method" value="email">
+                    <label for="email">Email</label>
+                    
+                    <input type="radio" id="phone" name="contact-method" value="phone">
+                    <label for="phone">Phone</label>
+                  </fieldset>
+                  <br><br>
             
                 <label for="updates">Subscribe to Updates:</label>
                 <input type="checkbox" id="updates" name="updates" value="yes"><br><br>
@@ -99,7 +101,7 @@
 
     <hr>
     <footer>
-        <p>&copy; 2025 Stephen Crossley</p>
+        &copy; 2025 Stephen Crossley
     </footer>
 </body>
 </html>
