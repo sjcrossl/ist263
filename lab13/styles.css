@@ -6,6 +6,8 @@ body {
     background-color: #4B5320; /* Military Green */
     color: #F5DEB3; /* Desert Tan text */
     width: 100%; 
+    font-weight: bold;
+    font-size: 1.1em; 
 }
 /* Contact Page Background */
 body.contact-page {
@@ -40,14 +42,14 @@ nav {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     font-size: 1.5em; 
     font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #FFD700; /* Gold highlight when hovering */
+    background-color: #b8860b; /* Gold highlight when hovering */
 }
 
 .bio-img {
