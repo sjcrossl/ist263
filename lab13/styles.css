@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 /* Navigation Bar */
 nav {
-    background-color: #2F4F4F;
+    background-color: #4B5320;
     padding: 10px;
     width: 100%;  
     display: flex;
@@ -42,7 +42,7 @@ nav {
 nav a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 1.2em; 
+    font-size: 1.5em; 
     font-weight: bold;
 }
 
