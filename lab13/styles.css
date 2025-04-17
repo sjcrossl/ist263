@@ -144,8 +144,9 @@ nav a:hover {
 }
 
 .other-skills li {
-    margin: 5px 0;
-    color: black;
+    font-weight: bold;
+    font-size: 1.2em;  /* or 18px for exact size */
+    color: #000000; 
 }
 
 /* FLEXBOX for Contact Section */
