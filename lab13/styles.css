@@ -14,7 +14,7 @@ body.contact-page {
     background-color: #81613c;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #FFD700; /* Gold */
 }
 .header-container {
@@ -265,7 +265,7 @@ iframe {
 }
 /* Fix contrast for links in LinkedIn section */
 .linkedin a {
-    color: #F5F5DC; /* Gold - meets contrast guidelines */
+    color: #FFFFF0; /* Gold - meets contrast guidelines */
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.2em;
