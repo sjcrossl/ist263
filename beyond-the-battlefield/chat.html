@@ -123,5 +123,20 @@
             <a href="https://linktr.ee/DeptVetAffairs" target="_blank">Linktr</a>
         </p>
     </footer>
+    <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+        <script>
+            // Show the button
+            window.onscroll = function () {
+                document.getElementById("topBtn").style.display =
+                    document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
+                        ? "block"
+                        : "none";
+            };
+        
+            // Scroll to top
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        </script>
 </body>
 </html>

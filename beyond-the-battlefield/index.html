@@ -31,9 +31,9 @@
         <!-- Video Section -->
         <section class="video">
             <h2>Watch This PSA - Your Life Matters</h2>
-            <p style="font-size: 0.9em; color: gray; margin-top: -10px;">
+            <h3 style="font-size: 1.0em; color: black; margin-top: -10px;">
                 Please play the video to hear an important message that could save your life and the lives of others.
-            </p>
+            </h3>
             <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/SMozpxLBMvo?autoplay=1&playsinline=1"
             title="Veterans Crisis Line PSA"
@@ -75,7 +75,6 @@
         </section>
         
     </main>
-
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Veterans United - Support Our Heroes</p>
@@ -86,5 +85,20 @@
             <a href="https://linktr.ee/DeptVetAffairs" target="_blank">Linktr</a>
         </p>
     </footer>
+    <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+        <script>
+            // Show the button
+            window.onscroll = function () {
+                document.getElementById("topBtn").style.display =
+                    document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
+                        ? "block"
+                        : "none";
+            };
+        
+            // Scroll to top
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        </script>
 </body>
 </html>
