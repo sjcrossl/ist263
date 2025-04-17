@@ -248,6 +248,15 @@ footer {
 #topBtn:hover {
     background-color: #e6c200;
 }
+footer a {
+    color: #FFD700; /* Bright gold for strong contrast */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FFFFFF; /* White on hover for accessibility */
+}
 
 @media screen and (max-width: 768px) {
     nav {
