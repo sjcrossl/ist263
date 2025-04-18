@@ -26,25 +26,29 @@ nav {
 }
 
 nav a {
-    color: white; 
+    color: white;
     font-size: 18px;
     margin: 15px;
     font-weight: bold;
     padding: 8px 15px;
     transition: background 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
-nav a:hover {
-    background-color: #FFD700; /* Gold background on hover */
-    color: #00274D; /* Dark navy text on hover */
-    border-radius: 5px;
-}
-
-
+/* Make sure active link doesn't block hover styles */
 nav a.active {
     background-color: transparent;
     color: white;
+    pointer-events: auto; /* Make sure it's hoverable */
 }
+
+/* Allow all links, even active, to show hover */
+nav a:hover {
+    background-color: #FFD700; /* Gold */
+    color: #00274D;             /* Dark navy */
+    border-radius: 5px;
+}
+
 
 /* ===== Hero Section ===== */
 .hero {
