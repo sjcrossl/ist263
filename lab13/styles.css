@@ -3,12 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0; 
-    background-color: #4B5320; /* Military Green */
-    color: #FFFFF0; /* Desert Tan text */
+    background-color: #4B5320;
+    color: #FFFFF0;
     width: 100%; 
     font-weight: bold;
-    font-size: 1.1em; 
+    font-size: 1.1em;
+    
+    min-height: 100vh;         /* Ensures full screen height */
+    display: flex;
+    flex-direction: column;
 }
+main {
+    flex: 1;
+}
+
 /* Contact Page Background */
 body.contact-page {
     background-color: #81613c;
@@ -43,7 +51,7 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1.5em; 
     font-weight: bold;
 }
@@ -275,9 +283,12 @@ iframe {
     color: #FFFFFF; /* White on hover for accessibility */
 }
 /* Ensure footer stays at the bottom but doesn't push page height */
-html, body {
-    height: 100%;
+html {
     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 /* Footer Styling - Consistent across pages */
@@ -290,10 +301,6 @@ footer {
     
 }
 
-/* Fix unnecessary overflow from flex containers */
-.skills-container {
-    overflow: hidden;
-}
 
 
 @media screen and (max-width: 768px) {
