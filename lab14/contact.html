@@ -7,12 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css"> 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a> <span>|</span>
         <a href="skills.html">Skills</a> <span>|</span>
@@ -23,9 +19,6 @@
         <h1 class="page-title">Contact</h1>
     </header>
     
-
-    
-    <!--  FLEXBOX CONTAINER CONTACT INFO -->
     <div class="contact-container">
         <div class="address">
             
@@ -48,7 +41,6 @@
         </div>
     </div>
 
-    <!-- FLEXBOX CONTAINER CONTACT Me & MAP -->
     <div class="contact-container">
         <div class="contact-box">
             <h2>Contact Me</h2>
@@ -87,7 +79,7 @@
     </div>
     <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
 <script>
-    // Show the button
+
     window.onscroll = function () {
         document.getElementById("topBtn").style.display =
             document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
@@ -95,12 +87,11 @@
                 : "none";
     };
 
-    // Scroll to top
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 </script>
-
+<a href="#main-content" class="skip-link" tabindex="0">Skip to Content</a>
     <hr>
     <footer>
         &copy; 2025 Stephen Crossley

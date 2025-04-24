@@ -6,11 +6,12 @@
     <title>Stephen Crossley - Bio</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to Content</a>
 
     <nav>
         <a href="index.html">Home</a> <span>|</span>
@@ -37,7 +38,6 @@
             </div>
         </section>
         
-
         
         <section class="accomplishments">
             <h2>Notable Accomplishments</h2>
@@ -71,7 +71,7 @@
     </main>
     <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
 <script>
-    // Show the button
+   
     window.onscroll = function () {
         document.getElementById("topBtn").style.display =
             document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
@@ -79,12 +79,12 @@
                 : "none";
     };
 
-    // Scroll to top
+   
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 </script>
-
+<a href="#main-content" class="skip-link" onclick="smoothScroll(event)">Skip to Content</a>
 
     <hr>
     <footer>
