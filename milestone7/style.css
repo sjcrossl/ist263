@@ -238,7 +238,6 @@ input, textarea {
     color: #444;
 }
 
-/* ===== Footer ===== */
 footer {
     background-color: #00274D;
     color: white;
@@ -247,6 +246,14 @@ footer {
     font-size: 14px;
 }
 
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #FFD700; /* Gold on hover, optional */
+}
 
 @media screen and (max-width: 768px) {
     nav {
